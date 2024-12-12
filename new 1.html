@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We provides dependable tree trimming services in Lexington, performed by certified arborists. Contact us today for a free estimate!">
+    <title>The #1 Tree Trimming Service in Lexington, Kentucky | Robison Tree Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+		
+        .hero {
+            background: url('Tree-Trimming.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+		.paragraph {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+           line-height: 1.8;
+            color: #333;
+        }
+
+        .paragraph span.highlight {
+          color: #d7385e;
+          font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .why-choose-us {
+            background: #f8f8f8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .why-choose-us p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .reason {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        footer .column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer .column h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .map iframe {
+            border: 0;
+            width: 100%;
+            height: 200px;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+		        .faq-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            display: left;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .faq-question:hover {
+            color: #007BFF;
+        }
+
+        .faq-answer {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+            display: none; /* Hidden by default */
+        }
+
+        .faq-question::before {
+            content: '\25B6'; /* Triangle symbol */
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::before {
+            transform: rotate(90deg); /* Rotate triangle */
+        }
+
+        .faq-item.active .faq-answer {
+            display: block; /* Show answer */
+        }
+
+        .map-embed {
+            margin: 2rem 0;
+        }
+
+        .map-embed iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+		
+		.social-icons a {
+         display: inline-block;
+         margin-right: 10px;
+        }
+
+        .social-icons img {
+          width: 24px;
+          height: 24px;
+          transition: transform 0.2s;
+        }
+
+       .social-icons img:hover {
+         transform: scale(1.2);
+        }
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Robison Tree Service",
+  "url": "https://robisontreeservice.com/",
+  "logo": "https://robisontreeservice.com/wp-content/uploads/2024/02/Robison-Tree-Service-Logo-e1710231461441.png",
+  "image": "https://robisontreeservice.com/wp-content/uploads/2024/02/Robison-Tree-Service-Logo-e1710231461441.png",
+  "telephone": "859-644-4874",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "105 Summer Ridge Rd",
+    "addressLocality": "Mount Sterling",
+    "addressRegion": "KY",
+    "postalCode": "40353",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.964656,
+    "longitude": -83.951687
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "00:00"
+    }
+  ],
+  "description": "Robison Tree Service provides professional tree services including emergency tree service, tree removal, stump grinding, tree trimming, tree pruning, and wood chipping in Mount Sterling, KY.",
+  "serviceArea": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lexington",
+      "addressRegion": "KY",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": "Lexington, KY and surrounding cities",
+  "sameAs": [
+    "https://maps.app.goo.gl/D6qLsefUPmaZYzH86",
+    "https://x.com/RobisonTree",
+    "https://www.youtube.com/@RobisonTreeService-q5s",
+    "https://www.pinterest.com/robisontreeservice/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Emergency Tree Service",
+          "description": "Rapid response for tree emergencies to protect your property from storm damage or hazardous trees."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Removal",
+          "description": "Safe and efficient removal of trees of any size."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stump Grinding",
+          "description": "Effective stump removal services to clear your yard."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Trimming",
+          "description": "Professional trimming to enhance tree health and appearance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Pruning",
+          "description": "Detailed pruning for maintaining the health and structure of your trees."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wood Chipping",
+          "description": "Efficient wood chipping services for managing debris."
+        }
+      }
+    ]
+  }
+}
+
+</script>
+
+</head>
+<body>
+    <header>
+        <h2>Robison Tree Service</h2>
+    </header>
+
+    <nav>
+		<div class="column footer-logo">
+                <img src="Robinson-Tree-Service-Logo.jpg" alt="Robison Tree Service Logo">
+
+            </div>
+		 <a href="index.html">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#services">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="tree-removal.html">Tree Removal</a></li>
+                <li><a href="tree-trimming.html">Tree Trimming</a></li>
+                <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                <li><a href="emergency-tree-services.html">Emergency Tree Services</a></li>
+            </ul>
+          </div>
+         <a href="aboutus.html">About Us</a>
+         <a href="privacy-policy.html">Privacy</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Tree Trimming Service</h1>
+    </div>
+	
+    <div class="paragraph">
+     <p>Maintain the health and beauty of your trees with <a href="https://robisontreeservice.com/">Robison Tree Service</a> in Lexington, Kentucky. Our experienced team uses advanced tree trimming techniques to promote growth and preserve structural integrity. Regular trimming enhances the visual appeal of your property while ensuring the long-term health and safety of your trees. Trust us to deliver expert care that keeps your outdoor space looking its best throughout the year.</p>
+      
+     <p>At Robison Tree Service in Lexington, Kentucky, we understand the difference a well-maintained tree can make. Our dedicated team takes the time to assess your needs, providing customized <a href="https://maps.app.goo.gl/D6qLsefUPmaZYzH86">tree trimming</a> services that keep your trees vibrant and thriving. With our expertise, your trees will enhance the charm of your property while ensuring their health and safety.</p>
+
+    </div>
+	
+     <div class="content" id="services">
+        <h2>Our Services Lexington, Kentucky</h2>
+        <p>We offer top-notch tree services tailored to your needs, including:</p>
+        <div class="services">
+            <div class="service-card">
+           <h3><a href="tree-removal.html">Tree Removal</a></h3>
+           <p><strong>Is there a tree posing a hazard on your property?</strong> At Robison Tree Service, we make tree removal easy and stress-free. Our professional services ensure that dead or unstable trees are safely removed, protecting your home and yard from potential hazards.</p>
+
+            </div>
+			
+			<div class="service-card">
+            <h3><a href="stump-grinding.html">Stump Grinding</a></h3>
+            <p><strong>Need to get rid of unsightly stumps?</strong> Our stump grinding service at Robison Tree Service quickly removes those eyesores, leaving your yard smooth and clear. This makes your landscape more usable and aesthetically pleasing.</p>
+
+            </div>
+			
+			<div class="service-card">
+             <h3><a href="emergency-tree-services.html">Emergency Tree Services</a></h3>
+             <p><strong>Dealing with storm damage or a fallen tree?</strong> Our 24/7 emergency services are here to help. We respond quickly to mitigate further damage and restore the safety of your property.</p>
+
+            </div>
+
+            <div class="service-card">
+                <h3><a href="tree-pruning.html">Tree Pruning</a></h3>
+                <p><strong>Keep your trees healthy and well-maintained.</strong> Our tree pruning service removes dead or diseased branches, promoting healthy growth and enhancing the appearance of your trees.</p>
+            </div>
+			
+            <div class="service-card">
+                <h3><a href="wood-chipping.html">Wood Chipping</a></h3>
+                <p><strong>Need to get rid of tree branches and debris?</strong> Our wood chipping service turns your tree waste into mulch, which can be used for landscaping, or we can haul it away, leaving your yard neat and clean.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Robison Tree Service?</h2>
+            <p>Choosing us means choosing peace of mind. We prioritize our customers' needs above all. Here's why:</p>
+            
+            <div class="reasons">
+                <div class="reason">
+                    <h3>Experienced and Skilled Team</h3>
+                    <p>All of our technicians are devoted tree care specialists with years of experience.</p>
+                </div>
+                <div class="reason">
+                    <h3>Commitment to Safety</h3>
+                    <p>Our team ensures that safety guidelines are followed strictly.</p>
+                </div>
+                <div class="reason">
+                    <h3>Customer-Focused Service</h3>
+                    <p>We provide tailored solutions for each client. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <div class="paragraph">
+          <p>When it comes to tree trimming, <strong>Robison Tree Service</strong> in Lexington, Kentucky, is your trusted partner. Our expert team specializes in trimming and shaping your trees, ensuring they are healthy, well-maintained, and visually appealing. By removing dead or overgrown branches, we enhance the tree’s growth and overall appearance, all while keeping your property safe.</p>
+
+          <p>At <a href="https://robisontreeservice.com">Robison Tree Service</a>, we take pride in offering personalized tree care services. Serving Lexington, KY, and surrounding areas, our skilled team delivers meticulous and efficient tree trimming tailored to your needs. Whether you're looking to improve the aesthetic of your yard or maintain the health of your trees, we guarantee professional results that will exceed your expectations.</p>
+
+    </div>
+<div class="faq-section">
+    <h1>FAQs AND ANSWERS</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">What's the benefit of tree trimming?</div>
+        <div class="faq-answer">
+            Tree trimming fosters healthy growth, enhances the shape of your trees, and minimizes the risk of falling branches. It also improves the overall look of your landscape.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can tree trimming damage my tree?</div>
+        <div class="faq-answer">
+            When done correctly, tree trimming is beneficial for your tree as it removes dead or weak branches and promotes healthy growth. Our certified arborists ensure proper trimming practices.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I know if my tree needs trimming?</div>
+        <div class="faq-answer">
+            Signs that your tree needs trimming include overgrown branches, dead limbs, or limbs growing too close to power lines or your home. We provide free assessments to determine your tree’s needs.
+        </div>
+    </div>
+
+</div>
+
+
+    <script>
+        // JavaScript for collapsible FAQ items
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+        <!-- Map Embed Section -->
+        <div class="map-embed">
+            <iframe 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d201314.20202168907!2d-83.951687!3d37.964656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8842ffaf6afb1331%3A0xefc01cc9da0a84ef!2sRobison%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1734007173240!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		  </iframe>
+        </div>
+
+    <footer>
+    <div class="container">
+        <div class="column footer-logo">
+            <img src="Robinson-Tree-Service-Logo.jpg" alt="Robison Tree Service Logo">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/Robison-Tree-Service/100087511860240/?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" alt="Facebook" style="width: 24px; margin-right: 10px;">
+                </a>
+                <a href="https://www.youtube.com/@RobisonTreeService-q5s" target="_blank" rel="noopener noreferrer">
+                    <img src="youtube.png" alt="YouTube" style="width: 24px; margin-right: 10px;">
+                </a>
+                <a href="https://x.com/RobisonTree" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 24px; margin-right: 10px;">
+                </a>
+                <a href="https://www.pinterest.com/robisontreeservice/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/128/220/220214.png" alt="Pinterest" style="width: 24px; margin-right: 10px;">
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a><br>
+            <a href="aboutus.html">About Us</a><br>
+            <a href="privacy-policy.html">Privacy Policy</a><br>
+            <a href="https://maps.app.goo.gl/D6qLsefUPmaZYzH86">Google Business Profile</a><br>
+            <p>Company Website: <a href="https://robisontreeservice.com/">https://robisontreeservice.com/</a></p><br>
+        </div>
+        <div class="column">
+            <h3>Services</h3>
+            <a href="tree-removal.html">Tree Removal</a><br>
+            <a href="tree-trimming.html">Tree Trimming</a><br>
+            <a href="stump-grinding.html">Stump Grinding</a><br>
+            <a href="emergency-tree-services.html">Emergency Tree Services</a><br>
+            <a href="">Tree Pruning</a><br>
+            <a href="">Wood Chipping</a>
+        </div>
+        <div class="column">
+            <h3>About Company</h3>
+            <p><b>Robison Tree Service</b></p>
+            <p><b>Address:</b> 105 Summer Ridge Rd</p>
+            <p><b>City:</b> Mount Sterling</p>
+            <p><b>Zipcode:</b> 40353</p>
+            <p><b>State:</b> Kentucky</p>
+            <p><b>Country:</b> United States</p>
+            <p><b>Phone: </b><a href="tel:859-644-4874">859-644-4874</a></p>
+        </div>
+
+            <div class="column map">
+			 <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8 AM–8 PM</p>
+				<p>Saturday: 9 AM–8 PM</p>
+				<p>Sunday: Closed</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d201314.20202168907!2d-83.951687!3d37.964656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8842ffaf6afb1331%3A0xefc01cc9da0a84ef!2sRobison%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1734007173240!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+	   </div>
+	     <p>&copy; 2024 Robison Tree Service</p>   
+    </footer>
+</body>
+</html>
