@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="we provides professional tree services in Minnesota. Our 24/7 team specializes in tree removal, trimming, land clearing, and emergency services. Contact us for affordable, reliable tree care!">
+    <title>The #1 Tree service in SW Minnesota | Rugged Tree Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+		
+        .hero {
+            background: url('safety-tree-service.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+		.paragraph {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+           line-height: 1.8;
+            color: #333;
+        }
+
+        .paragraph span.highlight {
+          color: #d7385e;
+          font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .why-choose-us {
+            background: #f8f8f8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .why-choose-us p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .reason {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        footer .column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer .column h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .map iframe {
+            border: 0;
+            width: 100%;
+            height: 200px;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+		        .faq-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            display: left;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .faq-question:hover {
+            color: #007BFF;
+        }
+
+        .faq-answer {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+            display: none; /* Hidden by default */
+        }
+
+        .faq-question::before {
+            content: '\25B6'; /* Triangle symbol */
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::before {
+            transform: rotate(90deg); /* Rotate triangle */
+        }
+
+        .faq-item.active .faq-answer {
+            display: block; /* Show answer */
+        }
+
+        .map-embed {
+            margin: 2rem 0;
+        }
+
+        .map-embed iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+		
+		.social-icons a {
+         display: inline-block;
+         margin-right: 10px;
+        }
+
+        .social-icons img {
+          width: 24px;
+          height: 24px;
+          transition: transform 0.2s;
+        }
+
+       .social-icons img:hover {
+         transform: scale(1.2);
+        }
+		 .container_entity {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two items per row */
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .grid-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .grid-item iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container_entity {
+                grid-template-columns: 1fr; /* One item per row on smaller screens */
+            }
+        }
+		/* START Section of homepage first page text and image style */
+.tree-care-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+/* Parent Container for Landscape Layout */
+.landscape-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Left Container: Image */
+.image-container {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #27ae60;
+  border-radius: 5px;
+}
+
+/* Right Container: Text */
+.text-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.call-button {
+  display: inline-block;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.call-button:hover {
+  background-color: #219150;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .landscape-container {
+    flex-direction: column;
+  }
+
+  .image-container, .text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+}
+		/* END Section of homepage first page text and image style */
+		
+		
+    </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Rugged Tree Service",
+  "url": "https://ruggedtreeservice.com/",
+  "logo": "https://ruggedtreeservice.com/wp-content/uploads/2024/02/Rugged-Tree-Service-Logo-e1710231461441.png",
+  "image": "https://ruggedtreeservice.com/wp-content/uploads/2024/02/Rugged-Tree-Service-Logo-e1710231461441.png",
+  "telephone": "+15078294317",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "206 N Brook Ave",
+    "addressLocality": "Porter",
+    "addressRegion": "MN",
+    "postalCode": "56280",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.5632,
+    "longitude": -96.1639
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "description": "Rugged Tree Service provides professional tree services including tree removal, tree trimming, brush mowing, stump grinding, and storm clean-up in Porter, MN.",
+  "serviceArea": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porter",
+      "addressRegion": "MN",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": "Porter, MN and surrounding areas",
+  "sameAs": [
+    "https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7",
+    "https://web.facebook.com/people/Rugged-Tree-Service/100067623044863/",
+    "https://www.pinterest.com/ruggedtreeservice/",
+    "https://youtu.be/7W7Brk4BmyM?si=uuA4ipwpPh7EEGKQ",
+    "https://x.com/ruggedtree1"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Removal",
+          "description": "Safe and efficient removal of trees of any size."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Trimming",
+          "description": "Professional trimming and pruning services for healthier trees."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Brush Mowing",
+          "description": "Efficient clearing of brush for residential and commercial properties."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stump Grinding",
+          "description": "Quick and effective stump removal services."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Storm Clean-Up",
+          "description": "Rapid response and clean-up services after storms."
+        }
+      }
+    ]
+  }
+}
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What factors determine the cost of tree removal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost of tree removal depends on several factors, including the size and height of the tree, its location and accessibility, the complexity of the job, and any additional services required, such as stump grinding or debris removal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should trees be trimmed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trees should typically be trimmed every 3-5 years, depending on the type and growth rate of the tree. Regular trimming helps maintain the tree's health, shape, and safety by removing dead or diseased branches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is tree removal covered by insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tree removal is sometimes covered by homeowner's insurance, particularly if the tree poses a danger to structures or has caused damage due to a storm. It's best to check with your insurance provider to understand your specific coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best time of year to perform tree trimming?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best time to trim most trees is during the late winter or early spring, when the tree is dormant. This minimizes stress on the tree and allows for more precise pruning before new growth begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for in a tree service company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When choosing a tree service company, look for a licensed and insured provider with a good reputation and positive reviews. It's also important that they have experienced and certified arborists, use proper safety equipment, and provide a detailed estimate before starting the work."
+      }
+    }
+  ]
+}
+
+</script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <h2> Rugged Tree Service</h2>
+    </header>
+
+    <nav>
+		<div class="column footer-logo">
+                <img src="Rugged-Tree-Service-Logo.png" alt="Rugged Tree Service Logo">
+
+            </div>
+		 <a href="index.html">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#services">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="tree-removal.html">Tree Removal</a></li>
+                <li><a href="tree-trimming.html">Tree Trimming</a></li>
+                <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                <li><a href="emergency-tree-services.html">Emergency Tree Services</a></li>
+            </ul>
+          </div>
+         <a href="aboutus.html">About Us</a>
+         <a href="privacy-policy.html">Privacy</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Tree Service in Minnesota</h1>
+    </div>
+	  <section class="tree-care-section">
+    <div class="landscape-container">
+      <!-- Left Container: Image -->
+      <div class="image-container">
+        <img src="images/Tree-service-company.jpg" alt="Tree Care Work">
+      </div>
+
+      <!-- Right Container: Text -->
+      <div class="text-container">
+    <p>When it comes to tree services in Porter, Minnesota, <a href="https://ruggedtreeservice.com/">Rugged Tree Service</a> has got you covered. We offer a range of services to cater to your needs, from emergency tree removal and land clearing to tree cutting, removal, and trimming. Our team is available around the clock, ready to provide prompt and professional help to keep your property safe and looking great.</p>
+    <p>At Rugged Tree Service, we take pride in delivering top-quality <a href="https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7">tree service</a> at prices that won't break the bank. Our skilled arborists use the latest techniques and equipment to tackle any tree-related challenge with precision and care. We know how important it is to maintain healthy and beautiful trees, and we're here to ensure you get the best service possible. For dependable and efficient tree care, give us a call.</p>
+    <a href="tel:+15078294317" class="call-button">📞 Call Us (507) 829-4317</a>
+</div>
+
+    </div>
+  </section>
+
+	 <header style="text-align: center; padding: 1rem; background-color: #4CAF50; color: white;">
+		<h2>Our Services in Porter, Minnesota</h2>
+        <p>We offer top-notch tree services tailored to your needs, including:</p>
+    </header>
+    <div class="content" id="services">
+    <div class="services">
+        <div class="service-card">
+            <h3><a href="tree-removal.html">Tree Removal</a></h3>
+            <p>Need a tree removed quickly and safely? Rugged Tree Service ensures precise tree removal, keeping your property safe and clean.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="tree-trimming.html">Tree Trimming</a></h3>
+            <p>Enhance your curb appeal and maintain your trees' health with our expert trimming services. We shape and care for your trees to perfection.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="stump-grinding.html">Stump Grinding</a></h3>
+            <p>Eliminate unsightly stumps effortlessly! Our stump grinding service clears your yard, creating a smooth and safe space for new landscaping.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="emergency-tree-services.html">Emergency Tree Services</a></h3>
+            <p>Dealing with storm damage or fallen trees? Rugged Tree Service is available 24/7 to handle emergencies and quickly restore your property's safety.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="#">Brush Mowing</a></h3>
+            <p>Our brush mowing services efficiently clear overgrown areas, keeping your landscape tidy and accessible.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="#">Storm Clean-Up</a></h3>
+            <p>After a storm, our team provides comprehensive clean-up services to remove debris and restore your property to its best condition.</p>
+        </div>
+    </div>
+</div>
+
+          <header style="text-align: center; padding: 1rem; background-color: #4CAF50; color: white;">
+		<h2>Why Choose Rugged Tree Service?</h2>
+            <p>Choosing us means choosing peace of mind. We prioritize our customers' needs above all. Here's why:</p>
+    </header>
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <div class="reasons">
+                <div class="reason">
+                    <h3>Experienced and Skilled Team</h3>
+                    <p>All of our technicians are devoted tree care specialists with years of experience.</p>
+                </div>
+                <div class="reason">
+                    <h3>Commitment to Safety</h3>
+                    <p>Our team ensures that safety guidelines are followed strictly.</p>
+                </div>
+                <div class="reason">
+                    <h3>Customer-Focused Service</h3>
+                    <p>We provide tailored solutions for each client. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <div class="paragraph">
+      <h2>Affordable Tree Care Service in Porter, Minnesota</h2>
+      <p>For affordable and <a href="https://ruggedtreeservice.com/">professional tree care service</a> in Porter, Minnesota, look no further than Rugged Tree Service. Located at 206 N Brook Ave, Porter, MN, Rugged Tree Service is dedicated to providing top-quality tree services to keep your property safe and beautiful. Whether you need emergency tree removal, land and brush clearing, tree cutting, tree removal, or tree trimming, our skilled team is available 24/7 to address your needs promptly and efficiently.</p>
+      <p>At Rugged Tree Service, we understand the importance of maintaining healthy and aesthetically pleasing trees. Our team of experienced professionals uses the latest equipment and techniques to ensure your trees receive the best care possible. From emergency services following storm damage to routine trimming for optimal tree health, we are committed to delivering exceptional service at affordable prices. Contact us today at (507) 829-4317 or visit our website at Rugged Tree Service to learn more about how we can help you with all your tree care needs.</p>
+     </div>
+
+	 <header style="text-align: center; padding: 1rem; background-color: #4CAF50; color: white;">
+        <h2>FAQs AND ANSWERS</h2>
+    </header>
+<div class="faq-section">
+    <h1>FAQs AND ANSWERS</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">What factors determine the cost of tree removal?</div>
+        <div class="faq-answer">
+            The cost of tree removal depends on several factors, including the size and height of the tree, its location and accessibility, the complexity of the job, and any additional services required, such as stump grinding or debris removal.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How often should trees be trimmed?</div>
+        <div class="faq-answer">
+            Trees should typically be trimmed every 3-5 years, depending on the type and growth rate of the tree. Regular trimming helps maintain the tree's health, shape, and safety by removing dead or diseased branches.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Is tree removal covered by insurance?</div>
+        <div class="faq-answer">
+            Tree removal is sometimes covered by homeowner's insurance, particularly if the tree poses a danger to structures or has caused damage due to a storm. It's best to check with your insurance provider to understand your specific coverage.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">What is the best time of year to perform tree trimming?</div>
+        <div class="faq-answer">
+            The best time to trim most trees is during the late winter or early spring, when the tree is dormant. This minimizes stress on the tree and allows for more precise pruning before new growth begins.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">What should I look for in a tree service company?</div>
+        <div class="faq-answer">
+            When choosing a tree service company, look for a licensed and insured provider with a good reputation and positive reviews. It's also important that they have experienced and certified arborists, use proper safety equipment, and provide a detailed estimate before starting the work.
+        </div>
+    </div>
+</div>
+
+    <script>
+        // JavaScript for collapsible FAQ items
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+          <header style="text-align: center; padding: 1rem; background-color: #4CAF50; color: white;">
+        <h2>Tree Care in Porter, Minnesota</h2>
+    </header>
+
+    <div class="container_entity">
+        <!-- YouTube Video Embed -->
+         <div class="grid-item">
+            <h3>Tree Care</h3>
+            <iframe 
+                src="https://en.wikipedia.org/wiki/Tree_care" 
+                title="Wikipedia article">
+            </iframe>
+        </div>
+		
+		        <!-- Wikipedia Article Embed -->
+        <div class="grid-item">
+            <h3>Porter, Minnesota</h3>
+            <iframe 
+                src="https://en.wikipedia.org/wiki/Porter,_Minnesota" 
+                title="Wikipedia article">
+            </iframe>
+        </div>
+		
+		      <!-- YouTube Video Embed -->
+        <div class="grid-item">
+            <h3>Rugged Tree Service</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/7W7Brk4BmyM?si=URnmcI2uXNA38jJ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        <!-- Google Spreadsheet Embed -->
+        <div class="grid-item">
+            <h3>Arborists</h3>
+			<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQCZknTgU2LS6yDfzG7hf6lEW324sudC7Vq4lwOzy5A3K--DRhjC2n4QogWY-fVIkWlqo_PXe9ODIrg/pubhtml?widget=true&amp;headers=false"></iframe>
+
+        </div>
+    </div>
+        <!-- Map Embed Section -->
+        <div class="map-embed">
+            <iframe 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1455345.5498255757!2d-95.323373!3d44.5669149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaaeb162a103e146b%3A0xe30754a3460d36b0!2sRugged%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1733969765990!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		  </iframe>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="column footer-logo">
+                <img src="Rugged-Tree-Service-Logo.png" alt="Rugged Tree Service Logo">
+				               <h3>Follow Us</h3>
+              <div class="social-icons">
+			  <a href="https://facebook.com/people/Rugged-Tree-Service/100067623044863/" target="_blank" rel="noopener noreferrer">
+               <img src="facebook.png" alt="Facebook" style="width: 24px; margin-right: 10px;">
+               </a>
+               <a href="https://www.youtube.com/@ruggedtreeservice" target="_blank" rel="noopener noreferrer">
+               <img src="youtube.png" alt="YouTube" style="width: 24px; margin-right: 10px;">
+               </a>
+               <a href="https://x.com/ruggedtree1" target="_blank" rel="noopener noreferrer">
+               <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 24px; margin-right: 10px;">
+               </a>
+			     <a href="https://www.pinterest.com/ruggedtreeservice/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn-icons-png.flaticon.com/128/220/220214.png" alt="Pinterest" style="width: 24px; margin-right: 10px;">
+                </a>
+             </div>
+
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><br>
+                <a href="aboutus.html">About Us</a><br>
+                <a href="privacy-policy.html">Privacy Policy</a><br>
+				<a href="https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7">Google Business Profile</a><br>
+				<p>Company Website: <a href="https://ruggedtreeservice.com/">https://ruggedtreeservice.com/</a></p><br>
+            </div>
+            <div class="column">
+                <h3>Services</h3>
+                <a href="tree-removal.html">Tree Removal</a><br>
+                <a href="tree-trimming.html">Tree Trimming</a><br>
+                <a href="stump-grinding.html">Stump Grinding</a><br>
+                <a href="emergency-tree-services.html">Emergency Tree Services</a>
+            </div>
+            <div class="column">
+                <h3>About Company</h3>
+				<p><b>Rugged Tree Service</b></p>
+                <p><b>Address:</b> 206 N Brook Ave</p>
+				<p><b>City:</b> Porter</p>
+				<p><b>Zipcode:</b> 56280</p>
+				<p><b>State:</b> Minnesota</p>
+				<p><b>Country:</b> United States</p>
+                <p><b>Phone: </b><a href="tel:507-829-4317">507-829-4317</a></p>
+				
+            </div>
+            <div class="column map">
+			 <h3>Opening Hours</h3>
+                <p>Saturday - Friday: 24 Hours</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1455345.5498255757!2d-95.323373!3d44.5669149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaaeb162a103e146b%3A0xe30754a3460d36b0!2sRugged%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1733969765990!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+	   </div>
+	     <p>&copy; 2024 Rugged Tree Service</p>   
+    </footer>
+</body>
+</html>

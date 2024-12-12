@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking for stump grinding services in Minnesota? We offers professional stump removal and grinding using powerful equipment to clear your property efficiently.">
+    <title>Stump Gringing Service in SW Minnesota | Rugged Tree Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+		
+        .hero {
+            background: url('Stump-Grinding.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+		.paragraph {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+           line-height: 1.8;
+            color: #333;
+        }
+
+        .paragraph span.highlight {
+          color: #d7385e;
+          font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 280px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .why-choose-us {
+            background: #f8f8f8;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .why-choose-us p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .reason {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .reason h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        footer .column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer .column h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .map iframe {
+            border: 0;
+            width: 100%;
+            height: 200px;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+		        .faq-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            display: left;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .faq-question:hover {
+            color: #007BFF;
+        }
+
+        .faq-answer {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+            display: none; /* Hidden by default */
+        }
+
+        .faq-question::before {
+            content: '\25B6'; /* Triangle symbol */
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::before {
+            transform: rotate(90deg); /* Rotate triangle */
+        }
+
+        .faq-item.active .faq-answer {
+            display: block; /* Show answer */
+        }
+
+        .map-embed {
+            margin: 2rem 0;
+        }
+
+        .map-embed iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+		
+		.social-icons a {
+         display: inline-block;
+         margin-right: 10px;
+        }
+
+        .social-icons img {
+          width: 24px;
+          height: 24px;
+          transition: transform 0.2s;
+        }
+
+       .social-icons img:hover {
+         transform: scale(1.2);
+        }
+    </style>
+	
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Rugged Tree Service",
+  "url": "https://ruggedtreeservice.com/",
+  "logo": "https://ruggedtreeservice.com/wp-content/uploads/2024/02/Rugged-Tree-Service-Logo-e1710231461441.png",
+  "image": "https://ruggedtreeservice.com/wp-content/uploads/2024/02/Rugged-Tree-Service-Logo-e1710231461441.png",
+  "telephone": "+15078294317",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "206 N Brook Ave",
+    "addressLocality": "Porter",
+    "addressRegion": "MN",
+    "postalCode": "56280",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.5632,
+    "longitude": -96.1639
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "description": "Rugged Tree Service provides professional tree services including tree removal, tree trimming, brush mowing, stump grinding, and storm clean-up in Porter, MN.",
+  "serviceArea": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porter",
+      "addressRegion": "MN",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": "Porter, MN and surrounding areas",
+  "sameAs": [
+    "https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7",
+    "https://web.facebook.com/people/Rugged-Tree-Service/100067623044863/",
+    "https://www.pinterest.com/ruggedtreeservice/",
+    "https://youtu.be/7W7Brk4BmyM?si=uuA4ipwpPh7EEGKQ",
+    "https://x.com/ruggedtree1"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Removal",
+          "description": "Safe and efficient removal of trees of any size."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tree Trimming",
+          "description": "Professional trimming and pruning services for healthier trees."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Brush Mowing",
+          "description": "Efficient clearing of brush for residential and commercial properties."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stump Grinding",
+          "description": "Quick and effective stump removal services."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Storm Clean-Up",
+          "description": "Rapid response and clean-up services after storms."
+        }
+      }
+    ]
+  }
+}
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does stump grinding work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our stump grinding process involves using specialized equipment to grind the stump down to below ground level, making the area ready for planting grass or other landscaping options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove multiple stumps at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Whether you have a single stump or multiple, we can efficiently grind them all, leaving your yard clear and ready for new use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is stump grinding affordable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our stump grinding services are cost-effective. We provide free quotes so you know the cost upfront, with no hidden fees."
+      }
+    }
+  ]
+}
+
+</script>
+
+
+</head>
+<body>
+    <header>
+        <h2> Rugged Tree Service</h2>
+    </header>
+
+    <nav>
+		<div class="column footer-logo">
+                <img src="Rugged-Tree-Service-Logo.png" alt="Rugged Tree Service Logo">
+
+            </div>
+		 <a href="home.html">Home</a>
+          <div class="nav-item dropdown">
+            <a href="#services">Services</a>
+            <ul class="dropdown-content">
+                <li><a href="tree-removal.html">Tree Removal</a></li>
+                <li><a href="tree-trimming.html">Tree Trimming</a></li>
+                <li><a href="stump-grinding.html">Stump Grinding</a></li>
+                <li><a href="emergency-tree-services.html">Emergency Tree Services</a></li>
+            </ul>
+          </div>
+         <a href="aboutus.html">About Us</a>
+         <a href="privacy-policy.html">Privacy</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Stump Grinding Service</h1>
+    </div>
+	
+<div class="paragraph">
+    <p>At Rugged Tree Service, we offer professional <a href="https://ruggedtreeservice.com">stump grinding</a> services in Porter, Minnesota, to enhance the beauty and safety of your yard. Leftover stumps after tree removal can be unsightly and pose hazards such as tripping or attracting pests like termites. Our team uses advanced stump grinding equipment to efficiently grind stumps below the surface, making lawn care and new landscaping opportunities simple and hassle-free. Whether you have one stump or several, we have the expertise to handle it all.</p>
+    <p>Our <a href="https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7">stump grinding</a> services in Porter, Minnesota, are designed to leave your property clean, safe, and ready for the next phase of landscaping. We prioritize quick and efficient stump removal, ensuring your yard is free of obstacles and looking its best. Trust Rugged Tree Service for all your stump grinding needs, and let our experts give your property the professional touch it deserves.</p>
+</div>
+
+<div class="content" id="services">
+    <h2>Our Services</h2>
+    <p>We offer top-notch tree services tailored to your needs, including:</p>
+    <div class="services">
+        <div class="service-card">
+            <h3><a href="tree-removal.html">Tree Removal</a></h3>
+            <p>Need a tree removed fast and safely? Our team specializes in precise tree removal, keeping your property secure and clean.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="tree-trimming.html">Tree Trimming</a></h3>
+            <p>Enhance your curb appeal and keep your trees thriving with our professional trimming services. We meticulously sculpt and care for your trees.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="emergency-tree-services.html">Emergency Tree Services</a></h3>
+            <p>Storm damage or fallen trees? Our 24/7 emergency services are ready to handle any situation and restore your property's safety promptly.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="brush-mowing.html">Brush Mowing</a></h3>
+            <p>Our brush mowing services efficiently clear overgrown areas, keeping your landscape tidy and accessible.</p>
+        </div>
+        <div class="service-card">
+            <h3><a href="storm-clean-up.html">Storm Clean-Up</a></h3>
+            <p>After a storm, our team provides comprehensive clean-up services to remove debris and restore your property to its best condition.</p>
+        </div>
+    </div>
+</div>
+
+
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Rugged Tree Service?</h2>
+            <p>Choosing us means choosing peace of mind. We prioritize our customers' needs above all. Here's why:</p>
+            
+            <div class="reasons">
+                <div class="reason">
+                    <h3>Experienced and Skilled Team</h3>
+                    <p>All of our technicians are devoted tree care specialists with years of experience.</p>
+                </div>
+                <div class="reason">
+                    <h3>Commitment to Safety</h3>
+                    <p>Our team ensures that safety guidelines are followed strictly.</p>
+                </div>
+                <div class="reason">
+                    <h3>Customer-Focused Service</h3>
+                    <p>We provide tailored solutions for each client. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="paragraph">
+    <h2>BEST STUMP GRINDING SERVICE</h2>
+    <p>For the best stump grinding service in Porter, Minnesota, look no further than Rugged Tree Service. Our expert team specializes in quickly and efficiently grinding down tree stumps, ensuring that your yard remains safe, clean, and free of hazards. Using state-of-the-art equipment, we can remove stumps of all sizes, transforming your landscape into a smooth, usable space once again.</p>
+    <p>At <a href="https://ruggedtreeservice.com">Rugged Tree Service</a>, we understand the importance of a well-maintained yard. After tree removal, our stump grinding service eliminates unsightly stumps and prevents the growth of new shoots, allowing you to easily move forward with landscaping or lawn care. Let us help you reclaim your space with our trusted, affordable stump grinding services in Porter, Minnesota.</p>
+</div>
+
+
+<div class="faq-section">
+    <h1>FAQs AND ANSWERS</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">How does stump grinding work?</div>
+        <div class="faq-answer">
+            Our stump grinding process involves using specialized equipment to grind the stump down to below ground level, making the area ready for planting grass or other landscaping options.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can you remove multiple stumps at once?</div>
+        <div class="faq-answer">
+            Absolutely! Whether you have a single stump or multiple, we can efficiently grind them all, leaving your yard clear and ready for new use.
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">Is stump grinding affordable?</div>
+        <div class="faq-answer">
+            Yes, our stump grinding services are cost-effective. We provide free quotes so you know the cost upfront, with no hidden fees.
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        // JavaScript for collapsible FAQ items
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+       <!-- Map Embed Section -->
+        <div class="map-embed">
+            <iframe 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1455345.5498255757!2d-95.323373!3d44.5669149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaaeb162a103e146b%3A0xe30754a3460d36b0!2sRugged%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1733969765990!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		  </iframe>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="column footer-logo">
+                <img src="Rugged-Tree-Service-Logo.png" alt="Rugged Tree Service Logo">
+				               <h3>Follow Us</h3>
+              <div class="social-icons">
+			  <a href="https://facebook.com/people/Rugged-Tree-Service/100067623044863/" target="_blank" rel="noopener noreferrer">
+               <img src="facebook.png" alt="Facebook" style="width: 24px; margin-right: 10px;">
+               </a>
+               <a href="https://www.youtube.com/@ruggedtreeservice" target="_blank" rel="noopener noreferrer">
+               <img src="youtube.png" alt="YouTube" style="width: 24px; margin-right: 10px;">
+               </a>
+               <a href="https://x.com/ruggedtree1" target="_blank" rel="noopener noreferrer">
+               <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 24px; margin-right: 10px;">
+               </a>
+			     <a href="https://www.pinterest.com/ruggedtreeservice/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn-icons-png.flaticon.com/128/220/220214.png" alt="Pinterest" style="width: 24px; margin-right: 10px;">
+                </a>
+             </div>
+
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><br>
+                <a href="aboutus.html">About Us</a><br>
+                <a href="privacy-policy.html">Privacy Policy</a><br>
+				<a href="https://maps.app.goo.gl/6gLow2t7UGi2Fpbx7">Google Business Profile</a><br>
+				<p>Company Website: <a href="https://ruggedtreeservice.com/">https://ruggedtreeservice.com/</a></p><br>
+            </div>
+            <div class="column">
+                <h3>Services</h3>
+                <a href="tree-removal.html">Tree Removal</a><br>
+                <a href="tree-trimming.html">Tree Trimming</a><br>
+                <a href="stump-grinding.html">Stump Grinding</a><br>
+                <a href="emergency-tree-services.html">Emergency Tree Services</a>
+            </div>
+            <div class="column">
+                <h3>About Company</h3>
+				<p><b>Rugged Tree Service</b></p>
+                <p><b>Address:</b> 206 N Brook Ave</p>
+				<p><b>City:</b> Porter</p>
+				<p><b>Zipcode:</b> 56280</p>
+				<p><b>State:</b> Minnesota</p>
+				<p><b>Country:</b> United States</p>
+                <p><b>Phone: </b><a href="tel:507-829-4317">507-829-4317</a></p>
+				
+            </div>
+            <div class="column map">
+			 <h3>Opening Hours</h3>
+                <p>Saturday - Friday: 24 Hours</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1455345.5498255757!2d-95.323373!3d44.5669149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaaeb162a103e146b%3A0xe30754a3460d36b0!2sRugged%20Tree%20Service!5e0!3m2!1sen!2sbd!4v1733969765990!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+	   </div>
+	     <p>&copy; 2024 Rugged Tree Service</p>   
+    </footer>
+</body>
+</html>
